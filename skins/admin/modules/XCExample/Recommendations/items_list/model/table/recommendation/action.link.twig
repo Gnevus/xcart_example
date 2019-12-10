@@ -1,0 +1,8 @@
+{##
+ # Edit Recommendation link
+ #}
+{% if this.getProductId() %}
+  {{ widget('XLite\\Module\\XCExample\\Recommendations\\View\\Button\\Admin\\EditRecommendation', {style: 'edit-recommendation', id: this.entity.getId(), target_product_id: this.getProductId(), 'icon-style': 'fa fa-edit icon'}) }}
+{% else %}
+  {{ widget('XLite\\Module\\XCExample\\Recommendations\\View\\Button\\Admin\\EditRecommendation', {style: 'edit-recommendation', id: this.entity.getId(), 'icon-style': 'fa fa-edit icon'}) }}
+{% endif %}

@@ -1,0 +1,13 @@
+# vim: set ts=2 sw=2 sts=2 et:
+#
+# Fixtures
+#
+# Copyright (c) 2011-present Qualiteam software Ltd. All rights reserved.
+# See https://www.x-cart.com/license-agreement.html for license details.
+
+
+XLite\Model\LanguageLabel:
+  - { name: 'Product recommendations', translations: [{ code: en, label: 'Recommendations' },{ code: ru, label: 'Рекоммендации' }] }
+  - { name: 'recommendation_text', translations: [{ code: en, label: 'Recommendation text' },{ code: ru, label: 'Текст рекоммендации' }] }
+  - { name: 'recommendation_url', translations: [{ code: en, label: 'Recommendation url (without http://)' },{ code: ru, label: 'Ссылка на источник (без http://)' }] }
+  - { name: 'add_recommendation', translations: [{ code: en, label: 'Add recommendation' },{ code: ru, label: 'Добавить рекоммендацию' }] }

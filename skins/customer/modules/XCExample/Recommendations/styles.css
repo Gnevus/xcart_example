@@ -1,0 +1,18 @@
+/* vim: set ts=2 sw=2 sts=2 et: */
+
+.product-tabs-recommendations {
+    background-color: #223349;
+}
+
+.product-tabs-recommendations h4 {
+    color: #FFFFFF;
+}
+
+.product-tabs-recommendations span{
+    font-size: 11px;
+    color: #f39999;
+}
+
+.product-tabs-recommendations a{
+    color: #FFFFFF;
+}

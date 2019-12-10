@@ -1,0 +1,27 @@
+{##
+ # Recommendations
+ #
+ # @ListChild (list="product.details.page.info", weight="18")
+ #}
+
+{% if this.product.recommendations.count > 0 %}
+    <div class="product-tabs-recommendations">
+        <h4 class="recommendations-text-white">{{ t('Recommendations') }}</h4>
+        <br>
+
+        {% for recommendation in this.product.recommendations %}
+            <span>"{{ recommendation.text }}"</span>
+            <br>
+            <a class="" href="http://{{ recommendation.url }}" target="_blank">{{ recommendation.url }}</a>
+
+            {% if loop.last %}
+                <br>
+            {% else %}
+                <br><br>
+            {% endif %}
+
+        {% endfor %}
+    </div>
+    <br>
+
+{% endif %}
